@@ -1,6 +1,9 @@
 # nodejslogger
 A logging module for node.js with three levels of logs (DEBUG, INFO, ERROR)
 
+INSTALL:
+npm install nodejslogger --save
+
 USAGE:
 The logger can be instantiated and used to print logs to console/output-file based on different options.
 var logger = require('nodejslogger')
