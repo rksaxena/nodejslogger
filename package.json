@@ -1,0 +1,27 @@
+{
+  "name": "nodejslogger",
+  "version": "1.0.0",
+  "description": "A logging module for Node.js which has three levels of logging (INFO, ERROR, DEBUG).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rksaxena/node-logger"
+  },
+  "keywords": [
+    "node.js",
+    "logging",
+    "debug"
+  ],
+  "author": "Rohit Kamal Saxena <rohit_kamal2003@yahoo.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rksaxena/node-logger/issues"
+  },
+  "homepage": "https://github.com/rksaxena/node-logger",
+  "dependencies": {
+    "dateformat": "^1.0.11"
+  }
+}
