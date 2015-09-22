@@ -1,8 +1,36 @@
 var dateFormat = require('dateformat');
+var fs = require('fs')
+var Console = require('console').Console;
+var console = new Console(process.stdout); 
+var debug = true, info = true, error = true;
 module.exports = {
+	init : function(options){
+		if(typeof options!="undefined"){
+			if(options["file"]) {
+				var Console = require('console').Console;
+				var output = fs.createWriteStream(options["file"])
+				console = new Console(output)	
+			}
+			if(options["mode"]) {
+				var mode = options["mode"]
+				if(mode.length<=3) {
+					debug = false, info = false, error = false;
+					for (var i=0; i< mode.length;i++) {
+						switch(mode[i]){
+							case 'D' : debug = true;
+								break;
+							case 'I' : info = true;
+								break;
+							case 'E' : error = true;
+								break;
+						}
+					}
+				}
+			}
+		}
+	
+	},
 	get_date : function(callback) {
-			//var now = new Date();
-			//callback(dateFormat(now, "dddd, mmmm dS, yyyy, h:MM:ss TT"))
 			var date = new Date();
 
 			var hour = date.getHours();
@@ -25,20 +53,23 @@ module.exports = {
 			callback("[" + year + month + day + "," + hour + ":" + min + ":" + sec+ "] ");	
 		},
 	debug : function(log) {
-			module.exports.get_date(function(date){
-				console.log(date + "DEBUG: "+ log)
-			})
+			if(debug === true)
+				module.exports.get_date(function(date){
+					console.log(date + "DEBUG: "+ log)
+				})
 		},
 	
 	info : function(log) {
-			module.exports.get_date(function(date){
-				console.log(date + "INFO: "+ log)
+			if(info === true)
+				module.exports.get_date(function(date){
+					console.log(date + "INFO: "+ log)
 			})
 		},
 	error : function(log) {
-			module.exports.get_date(function(date){
-				console.log(date + "ERROR: "+ log)
-			})
+			if(error === true)
+				module.exports.get_date(function(date){
+					console.log(date + "ERROR: "+ log)
+				})
 		}
 }
 
