@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rksaxena/node-logger"
+    "url": "https://github.com/rksaxena/nodejslogger"
   },
   "keywords": [
     "node.js",
@@ -18,9 +18,9 @@
   "author": "Rohit Kamal Saxena <rohit_kamal2003@yahoo.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rksaxena/node-logger/issues"
+    "url": "https://github.com/rksaxena/nodejslogger/issues"
   },
-  "homepage": "https://github.com/rksaxena/node-logger",
+  "homepage": "https://github.com/rksaxena/nodejslogger",
   "dependencies": {
     "dateformat": "^1.0.11"
   }
