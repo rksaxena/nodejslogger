@@ -13,7 +13,11 @@
   "keywords": [
     "node.js",
     "logging",
-    "debug"
+    "debug",
+    "node.js logger",
+    "nodejs logger",
+    "node.js loging",
+    "logger"
   ],
   "author": "Rohit Kamal Saxena <rohit_kamal2003@yahoo.com>",
   "license": "ISC",
