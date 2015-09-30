@@ -1,4 +1,3 @@
-var dateFormat = require('dateformat');
 var fs = require('fs')
 var Console = require('console').Console;
 var console = new Console(process.stdout); 

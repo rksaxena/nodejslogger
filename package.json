@@ -25,7 +25,5 @@
     "url": "https://github.com/rksaxena/nodejslogger/issues"
   },
   "homepage": "https://github.com/rksaxena/nodejslogger",
-  "dependencies": {
-    "dateformat": "^1.0.11"
-  }
+  "dependencies": {}
 }
