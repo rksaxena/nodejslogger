@@ -22,10 +22,10 @@
     "logger"
   ],
   "author": "Rohit Kamal Saxena <rohit_kamal2003@yahoo.com>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/rksaxena/nodejslogger/issues"
   },
+  "license": "MIT",
   "homepage": "https://github.com/rksaxena/nodejslogger",
   "dependencies": {}
 }
